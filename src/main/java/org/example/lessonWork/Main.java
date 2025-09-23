@@ -24,6 +24,7 @@ public class Main {
          */
 
     }
+
     public static String vremenaIf(int month) {
         if (month == 12 || month == 1 || month == 2) {
             return "Зима";
@@ -93,4 +94,5 @@ public class Main {
             return "Не может быть отрицательного, введите правильно";
         }
     }
+
 }
