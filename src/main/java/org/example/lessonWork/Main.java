@@ -23,6 +23,7 @@ public class Main {
         А это тогда че
         типа некрасивая версия
          */
+        System.out.println(bolsheeChislo(5, 5));
 
     }
 
@@ -93,6 +94,16 @@ public class Main {
         }
         else {
             return "Не может быть отрицательного, введите правильно";
+        }
+    }
+
+    public static String bolsheeChislo(int x, int y) {
+        if (x == y) {
+            return "Числа равны";
+        } else if (x > y) {
+            return x+"";
+        } else {
+            return y+"";
         }
     }
 
