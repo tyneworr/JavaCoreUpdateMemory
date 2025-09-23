@@ -3,12 +3,13 @@ package org.example.lessonWork;
 public class Main {
     public static void main(String[] args) {
         //Времена года
-        System.out.println(Main.vremenaIf(4));
-        System.out.println(Main.vremenaSwitch(7));
+        System.out.println(vremenaIf(4));
+        System.out.println(vremenaSwitch(7));
         //Оканчивается ли число на цифру 3
-        System.out.println(Main.konec3(1234563));
+        System.out.println(konec3(1234563));
         //Падежи рубля
-        System.out.println(Main.padej(0));
+        System.out.println(padej(0));
+        System.out.println(Main.padej(1));
         /**Опа
          * Проверка
          * на
