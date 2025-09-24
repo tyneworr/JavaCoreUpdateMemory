@@ -1,6 +1,6 @@
 package org.example.DMD;
 
-public class taskCycleForWhile {
+public class TaskCycleForWhile {
     public static void main(String[] args) {
         /**
          * Задачка на факториал чтсла с помощью цикла.

@@ -1,6 +1,6 @@
 package org.example.lessonWhile;
 
-public class whileLesson {
+public class WhileLesson {
     public static void main(String[] args) {
         System.out.println("Hello World");
         int value = 10;
