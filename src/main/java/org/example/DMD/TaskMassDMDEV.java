@@ -1,5 +1,7 @@
 package org.example.DMD;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class TaskMassDMDEV {
     public static void main(String[] args) {
         int[] mass = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
@@ -11,7 +13,18 @@ public class TaskMassDMDEV {
         task1(mass);
         task1(mass2);
         task2(100);
+        int[][] massM = {
+                {1, 2},
+                {3, 4}
+        };
+        int[][] massM2 = {
+                {5, 2},
+                {3, 4}
+        };
         task22(massTask2);
+        System.out.println();
+        System.out.println(task3(massM, massM2));
+        System.out.println();
     }
 
     public static void task1(int[] values) {
@@ -61,5 +74,24 @@ public class TaskMassDMDEV {
             System.out.print("task22 mass: " + value + ". ");
         }
         System.out.println();
+    }
+
+    public static boolean task3(int[][] mass1, int [][] mass2) {
+        if (mass1.length != mass2.length) {
+            return false;
+        }
+        for (int i = 0; i < mass1.length; i++) {
+            int[] x = mass1[i];
+            int[] y = mass2[i];
+            if (x.length != y.length) {
+                return false;
+            }
+            for (int j = 0; j < y.length; j++) {
+                if (x[j] != y[j]) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 }
