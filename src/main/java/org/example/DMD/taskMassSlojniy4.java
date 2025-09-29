@@ -3,7 +3,7 @@ package org.example.DMD;
 public class taskMassSlojniy4 {
     public static void main(String[] args) {
 
-        int[] mass = {6, 2, 4, 1, 6};
+        int[] mass = {6, 2, 4, 8, 2, 1, 6};
         if(sum(mass) == 0) {
             System.out.println("Соблюдайте условие");
         } else {
